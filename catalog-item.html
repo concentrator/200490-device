@@ -12,11 +12,8 @@
           <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту" />
           <button class="button" type="submit">Найти</button>
         </form>
-        <ul class="user-menu login-menu-authorized">
-          <li class="user-icon"><a href="#">Валентин Петухов</a></li>
-          <li class="user-logout"><a href="#">Выйти</a></li>
-        </ul>
-        <ul class="user-menu shop-menu">
+        <ul class="user-menu user-menu-authorized">
+          <li class="user-icon"><a href="#">Валентин Петухов</a><a href="#">Выйти</a></li>
           <li class="compare-icon"><a href="#">Сравнить</a></li>
           <li class="cart-icon"><a href="#">Корзина</a></li>
         </ul>
@@ -37,9 +34,7 @@
         <ul class="about-menu">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
-        </ul>
-        <ul class="about-menu contact-menu">
-          <li><a href="#">Контакты</a></li>
+          <li class="about-menu-contacts"><a href="#">Контакты</a></li>
         </ul>
     </nav>
     </header>
@@ -54,7 +49,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <div class="catalog-filter-header">
-          <b>Фильтр:</b>
+          <h3>Фильтр:</h3>
         </div>
         <form class="catalog-filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
@@ -64,51 +59,54 @@
             <legend>Цвет</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" checked name="black" />
-                Черный
+                <input class="visually-hidden filter-input filter-input-checkbox" id="black" type="checkbox" checked name="black" />
+                <label for="black">Черный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" />
-                Белый
+                <input class="visually-hidden filter-input filter-input-checkbox" id="white" type="checkbox" name="white" />
+                <label for="white">Белый</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" checked name="blue" />
-                Синий
+                <input class="visually-hidden filter-input filter-input-checkbox" id="blue" type="checkbox" checked name="blue" />
+                <label for="blue">Синий</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" checked name="red" />
-                Красный
+                <input class="visually-hidden filter-input filter-input-checkbox" id="red" type="checkbox" checked name="red" />
+                <label for="red">Красный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" />
-                Розовый
+                <input class="visually-hidden filter-input filter-input-checkbox" id="pink" type="checkbox" name="pink" />
+                <label for="pink">Розовый</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Bluetooth</legend>
-            <p>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" checked value="yes" />
-              Есть
-            </p>
-            <p>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" />
-              Нет
-            </p>
+            <ul>
+              <li><input class="visually-hidden filter-input filter-input-radio" id="bluetooth-yes" type="radio" name="bluetooth" checked value="yes" />
+                  <label for="bluetooth-yes">Есть</label>
+              </li>
+              <li><input class="visually-hidden filter-input filter-input-radio" id="bluetooth-no" type="radio" name="bluetooth" value="no" />
+                <label for="bluetooth-no">Нет</label>
+              </li>
+            </ul>
           </fieldset>
           <button class="yellow-button" type="submit">Показать</button>
         </form>
       </section>
       <section class="catalog">
         <div class="catalog-header">
-          <b>Сортировка:</b>
-          <a class="catalog-sort current" href="#">По цене</a>
-          <a class="catalog-sort" href="#">По типу</a>
-          <a class="catalog-sort" href="#">По популярности</a>
+          <h3>Сортировка:</h3>
+          <input class="visually-hidden radio-sorting" id="sort-price" type="radio" name="sorting" checked>
+          <label for="sort-price">По цене</label>
+          <input class="visually-hidden radio-sorting" id="sort-type" type="radio" name="sorting">
+          <label for="sort-type">По типу</label>
+          <input class="visually-hidden radio-sorting" id="sort-pop" type="radio" name="sorting">
+          <label for="sort-pop">По популярности</label>
         </div>
         <ul>
           <li class="catalog-item">
-            <p class="catalog-item-mage">
+            <p class="catalog-item-image">
               <img src="#" alt="Любительская селфи-палка" />
             </p>
             <h3 class="catalog-item-name">
@@ -119,7 +117,7 @@
             <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-mage">
+            <p class="catalog-item-image">
               <img src="#" alt="Профессиональная селфи-палка " />
             </p>
             <h3 class="catalog-item-name">
@@ -130,7 +128,7 @@
             <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-mage">
+            <p class="catalog-item-image">
               <img src="#" alt="Непотопляемая селфи-палка" />
             </p>
             <h3 class="catalog-item-name">
@@ -141,7 +139,7 @@
             <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-mage">
+            <p class="catalog-item-image">
               <img src="#" alt="Селфи-палка «Следуй за мной»" />
             </p>
             <h3 class="catalog-item-name">
@@ -153,9 +151,9 @@
           </li>
         </ul>
         <div class="pagination">
-          <a class="pagination-back" href="#">Назад</a>
-          <a class="pagination-front" href="#">Вперед</a>
           <ul class="pagination-list">
+            <li class="pagination-item pagination-item-back"><a href="#">Назад</a></li>
+            <li class="pagination-item pagination-item-front"><a href="#">Вперед</a></li>
             <li class="pagination-item pagination-item-current"><a>1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
@@ -175,7 +173,6 @@
       <p class="footer-address">
         г. Москва, ул. Строителей, 15
       </p>
-      <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
       <nav class="about-footer-nav">
         <ul class="about-menu">
           <li><a href="#">Доставка</a></li>
@@ -183,6 +180,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
+      <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <div class="footer-social">
         <ul>
           <li><a class="social-button fb" href="#"></a></li>
@@ -196,16 +194,16 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form method="post">
         <p>
-          Ваше имя:
-          <input type="text" name="name" placeholder="Представьтесь, пожалуйста"/>
+          <label for="form-name">Ваше имя:</label>
+          <input type="text" id="form-name" name="name" placeholder="Представьтесь, пожалуйста"/>
         </p>
         <p>
-          Ваш e-mail:
-          <input type="text" name="email" placeholder="Для отправки ответа"/>
+          <label for="form-email">Ваш e-mail:</label>
+          <input type="text" id="form-email" name="email" placeholder="Для отправки ответа"/>
         </p>
         <p>
-          Текст письма:
-          <textarea>В свободной форме</textarea>
+          <label for="form-text">Текст письма:</label>
+          <textarea id="form-text" placeholder="В свободной форме"></textarea>
         </p>
         <button class="yellow-button" type="submit">Отправить</button>
       </form>

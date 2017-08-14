@@ -12,10 +12,8 @@
           <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту" />
           <button class="button" type="submit">Найти</button>
         </form>
-        <ul class="user-menu login-menu">
+        <ul class="user-menu user-menu-login">
           <li class="user-icon"><a href="#">Войти</a></li>
-        </ul>
-        <ul class="user-menu shop-menu">
           <li class="compare-icon"><a href="#">Сравнить</a></li>
           <li class="cart-icon"><a href="#">Корзина</a></li>
         </ul>
@@ -36,119 +34,72 @@
         <ul class="about-menu">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
-        </ul>
-        <ul class="about-menu contact-menu">
-          <li><a href="#">Контакты</a></li>
+          <li class="about-menu-contacts"><a href="#">Контакты</a></li>
         </ul>
     </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Интернет-магазин DEVICE</h1>
+
       <section class="main-slider">
-        <h2 class="visually-hidden">Слайды - реклама товаров</h2>
-        <ul class="slider-selector">
-          <li class="slider-selector-current"><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-        <ul class="slider">
-          <li class="slider-item slider-item-current">
-            <span class="slider-item-count">01</span>
-            <p class="slider-item-photo">
-              <img src="#" alt="Палка для селфи"/>
-            </p>
-            <div class="slider-item-info">
-              <p class="slider-item-slogan">
-                Делай селфи,<br />
-                как Бен Стиллер!
-              </p>
-              <p class="slider-item-description">
-                Самая длинная палка для селфи доступна в нашем магазине.<br />
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-              </p>
-              <a class="yellow-button slider-item-more" href="#">Подробнее</a>
-              <ul class="slider-item-specs">
-                <li>
-                  <span>Длина палки</span>
-                  <b>8,5 м</b>
-                </li>
-                <li>
-                  <span>Вес палки</span>
-                  <b>5 кг</b>
-                </li>
-                <li>
-                  <span>Материал</span>
-                  <b>Карбон</b>
-                </li>
-              </ul>
-            </div>
-
-          </li>
-        </ul>
-
       </section>
-      <section class="catalog-visual">
+
+      <nav class="catalog-visual">
         <h2 class="visually-hidden">Наигация по каталогу</h2>
-        <nav class="catalog-visual-nav">
           <ul>
             <li>
-              <div><a href=#><img src="#" alt="Виртуальная реальность" /></a></div>
-              <p><a href=#>Виртуальная реальность</a></p>
+              <a href="#">
+                <figure>
+                  <img src="#" alt="Виртуальная реальность" />
+                  <figcaption>Виртуальная реальность</figcaption>
+                </figure>
+              </a>
             </li>
             <li>
-              <div><a href="catalog-item.html"><img src="#" alt="Моноподы для селфи" /></a></div>
-              <p><a href="catalog-item.html">Моноподы для селфи</a></p>
+              <a href="catalog-item.html">
+                <figure>
+                  <img src="#" alt="Моноподы для селфи" />
+                  <figcaption>Моноподы для селфи</figcaption>
+                </figure>
             </li>
             <li>
-              <div><a href=#><img src="#" alt="Экшн-камеры" /></a></div>
-              <p><a href=#>Экшн-камеры</a></p>
+              <a href="#">
+                <figure>
+                  <img src="#" alt="Экшн-камеры" />
+                  <figcaption>Экшн-камеры</figcaption>
+                </figure>
+              </a>
             </li>
             <li>
-              <div><a href=#><img src="#" alt="Фитнес-браслеты" /></a></div>
-              <p><a href=#>Фитнес-браслеты</a></p>
+              <a href="#">
+                <figure>
+                  <img src="#" alt="Фитнес-браслеты" />
+                  <figcaption>Фитнес-браслеты</figcaption>
+                </figure>
+              </a>
             </li>
             <li>
-              <div><a href=#><img src="#" alt="Умные часы" /></a></div>
-              <p><a href=#>Умные часы</a></p>
+              <a href="#">
+                <figure>
+                  <img src="#" alt="Умные часы" />
+                  <figcaption>Умные часы</figcaption>
+                </figure>
+              </a>
             </li>
             <li>
-              <div><a href=#><img src="#" alt="Квадрокоптеры" /></a></div>
-              <p><a href=#>Квадрокоптеры</a></p>
+              <a href="#">
+                <figure>
+                  <img src="#" alt="Квадрокоптеры" />
+                  <figcaption>Квадрокоптеры</figcaption>
+                </figure>
+              </a>
             </li>
           </ul>
-        </nav>
+      </nav>
+
+      <section class="main-services">
       </section>
 
-      <section class="main-sevices">
-        <nav class="srvices-nav">
-          <ul>
-            <li class="yellow-button current"><a href="#">Доставка</a></li>
-            <li class="yellow-button"><a href="#">Гарантия</a></li>
-            <li class="yellow-button"><a href="#">Кредит</a></li>
-          </ul>
-        </nav>
-        <div class="services-item current-item">
-          <h2>Доставка</h2>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-          <img src="#" alt="Доставка"/>
-        </div>
-        <div class="services-item">
-          <h2>Гарантия</h2>
-          <p>
-            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-          </p>
-          <img src="#" alt="Гарантия"/>
-        </div>
-        <div class="services-item">
-          <h2>Кредит</h2>
-          <p>
-            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-          </p>
-          <img src="#" alt="Кредит"/>
-        </div>
-      </section>
       <section class="brands">
         <h2 class="visually-hidden">Производители</h2>
         <ul class="brands-list">
@@ -179,9 +130,9 @@
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
-        <p class="contacts-map">
+        <div class="contacts-map">
           <img src="#">
-        </p>
+        </div>
         <a class="yellow-button" href="#">Напишите нам</a>
       </section>
     </main>
@@ -189,7 +140,7 @@
       <a class="site-logo footer-logo">Device</a>
       <nav class="user-navigation-footer">
         <ul class="user-menu">
-          <li class="user-icon"><a href="#">Войти</a></li>
+          <li class="user-icon"><a href="#">Выйти</a></li>
           <li class="compare-icon"><a href="#">Сравнить</a></li>
           <li class="cart-icon"><a href="#">Корзина</a></li>
         </ul>
@@ -197,7 +148,6 @@
       <p class="footer-address">
         г. Москва, ул. Строителей, 15
       </p>
-      <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
       <nav class="about-footer-nav">
         <ul class="about-menu">
           <li><a href="#">Доставка</a></li>
@@ -205,6 +155,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
+      <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <div class="footer-social">
         <ul>
           <li><a class="social-button fb" href="#"></a></li>
@@ -218,16 +169,16 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form method="post">
         <p>
-          Ваше имя:
-          <input type="text" name="name" placeholder="Представьтесь, пожалуйста"/>
+          <label for="form-name">Ваше имя:</label>
+          <input type="text" id="form-name" name="name" placeholder="Представьтесь, пожалуйста"/>
         </p>
         <p>
-          Ваш e-mail:
-          <input type="text" name="email" placeholder="Для отправки ответа"/>
+          <label for="form-email">Ваш e-mail:</label>
+          <input type="text" id="form-email" name="email" placeholder="Для отправки ответа"/>
         </p>
         <p>
-          Текст письма:
-          <textarea>В свободной форме</textarea>
+          <label for="form-text">Текст письма:</label>
+          <textarea id="form-text" placeholder="В свободной форме"></textarea>
         </p>
         <button class="yellow-button" type="submit">Отправить</button>
       </form>
