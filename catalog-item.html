@@ -83,10 +83,12 @@
           <fieldset>
             <legend>Bluetooth</legend>
             <ul>
-              <li><input class="visually-hidden filter-input filter-input-radio" id="bluetooth-yes" type="radio" name="bluetooth" checked value="yes" />
-                  <label for="bluetooth-yes">Есть</label>
+              <li>
+                <input class="visually-hidden filter-input filter-input-radio" id="bluetooth-yes" type="radio" name="bluetooth" checked value="yes" />
+                <label for="bluetooth-yes">Есть</label>
               </li>
-              <li><input class="visually-hidden filter-input filter-input-radio" id="bluetooth-no" type="radio" name="bluetooth" value="no" />
+              <li>
+                </li><input class="visually-hidden filter-input filter-input-radio" id="bluetooth-no" type="radio" name="bluetooth" value="no" />
                 <label for="bluetooth-no">Нет</label>
               </li>
             </ul>
@@ -104,59 +106,63 @@
           <input class="visually-hidden radio-sorting" id="sort-pop" type="radio" name="sorting">
           <label for="sort-pop">По популярности</label>
         </div>
-        <ul>
+        <ul class="catalog-list">
           <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="#" alt="Любительская селфи-палка" />
-            </p>
-            <h3 class="catalog-item-name">
-              <a href="#">Любительская селфи-палка</a>
-            </h3>
-            <span class="catalog-item-price">500 руб.</span>
-            <a class="yellow-button catalog-item-button" href="#">В корзину</a>
-            <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
+            <figure class="catalog-item-image">
+              <img src="#" alt="Любительская селфи-палка">
+              <figcaption class="catalog-item-info">
+                Любительская селфи-палка <span class="catalog-item-price">500 руб.</span>
+              </figcaption>
+            </figure>
+            <div class="catalog-item-buttons">
+              <a class="yellow-button catalog-item-button" href="#">В корзину</a>
+              <a class="compare-button catalog-item-button" href="#">Добавить к сравнению</a>
+            </div>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="#" alt="Профессиональная селфи-палка " />
-            </p>
-            <h3 class="catalog-item-name">
-              <a href="#">Профессиональная селфи-палка </a>
-            </h3>
-            <span class="catalog-item-price">1500 руб.</span>
-            <a class="yellow-button catalog-item-button" href="#">В корзину</a>
-            <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
+            <figure class="catalog-item-image">
+              <img src="#" alt="Профессиональная селфи-палка" />
+              <figcaption class="catalog-item-info">
+                Профессиональная селфи-палка <span class="catalog-item-price">1500 руб.</span>
+              </figcaption>
+            </figure>
+            <div class="catalog-item-buttons">
+              <a class="yellow-button catalog-item-button" href="#">В корзину</a>
+              <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
+            </div>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
+            <figure class="catalog-item-image">
               <img src="#" alt="Непотопляемая селфи-палка" />
-            </p>
-            <h3 class="catalog-item-name">
-              <a href="#">Непотопляемая селфи-палка</a>
-            </h3>
-            <span class="catalog-item-price">2500 руб.</span>
-            <a class="yellow-button catalog-item-button" href="#">В корзину</a>
-            <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
+              <figcaption class="catalog-item-info">
+                Непотопляемая селфи-палка <span class="catalog-item-price">2500 руб.</span>
+              </figcaption>
+            </figure>
+            <div class="catalog-item-buttons">
+              <a class="yellow-button catalog-item-button" href="#">В корзину</a>
+              <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
+            </div>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
+            <figure class="catalog-item-image">
               <img src="#" alt="Селфи-палка «Следуй за мной»" />
-            </p>
-            <h3 class="catalog-item-name">
-              <a href="#">Селфи-палка «Следуй за мной»</a>
-            </h3>
-            <span class="catalog-item-price">4900 руб.</span>
-            <a class="yellow-button catalog-item-button" href="#">В корзину</a>
-            <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
+              <figcaption class="catalog-item-info">
+                Селфи-палка «Следуй за мной» <span class="catalog-item-price">4900 руб.</span>
+              </figcaption>
+            </figure>
+            <div class="catalog-item-buttons">
+              <a class="yellow-button catalog-item-button" href="#">В корзину</a>
+              <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
+            </div>
           </li>
         </ul>
         <div class="pagination">
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-back"><a href="#">Назад</a></li>
-            <li class="pagination-item pagination-item-front"><a href="#">Вперед</a></li>
             <li class="pagination-item pagination-item-current"><a>1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item pagination-item-front"><a href="#">Вперед</a></li>
           </ul>
         </div>
       </section>
