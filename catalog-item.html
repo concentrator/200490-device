@@ -47,10 +47,7 @@
       </ul>
 
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <div class="catalog-filter-header">
-          <h3>Фильтр:</h3>
-        </div>
+        <h3 class="catalog-filter-header">Фильтр:</h3>
         <form class="catalog-filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
@@ -111,48 +108,48 @@
             <figure class="catalog-item-image">
               <img src="#" alt="Любительская селфи-палка">
               <figcaption class="catalog-item-info">
-                Любительская селфи-палка <span class="catalog-item-price">500 руб.</span>
+                <a class="catalog-item-name" href="#">Любительская селфи-палка</a><span class="catalog-item-price">500 руб.</span>
               </figcaption>
             </figure>
             <div class="catalog-item-buttons">
-              <a class="yellow-button catalog-item-button" href="#">В корзину</a>
-              <a class="compare-button catalog-item-button" href="#">Добавить к сравнению</a>
+              <button type="button" class="yellow-button catalog-item-button">В корзину</button>
+              <button type="button" class="compare-button catalog-item-button">Добавить к сравнению</button>
             </div>
           </li>
           <li class="catalog-item">
             <figure class="catalog-item-image">
               <img src="#" alt="Профессиональная селфи-палка" />
               <figcaption class="catalog-item-info">
-                Профессиональная селфи-палка <span class="catalog-item-price">1500 руб.</span>
+                <a class="catalog-item-name" href="#">Профессиональная селфи-палка</a><span class="catalog-item-price">1500 руб.</span>
               </figcaption>
             </figure>
             <div class="catalog-item-buttons">
-              <a class="yellow-button catalog-item-button" href="#">В корзину</a>
-              <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
+              <button type="button" class="yellow-button catalog-item-button">В корзину</button>
+              <button type="button" class="add-to-compare catalog-item-button">Добавить к сравнению</button>
             </div>
           </li>
           <li class="catalog-item">
             <figure class="catalog-item-image">
               <img src="#" alt="Непотопляемая селфи-палка" />
               <figcaption class="catalog-item-info">
-                Непотопляемая селфи-палка <span class="catalog-item-price">2500 руб.</span>
+                <a class="catalog-item-name" href="#">Непотопляемая селфи-палка</a><span class="catalog-item-price">2500 руб.</span>
               </figcaption>
             </figure>
             <div class="catalog-item-buttons">
-              <a class="yellow-button catalog-item-button" href="#">В корзину</a>
-              <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
+              <button type="button" class="yellow-button catalog-item-button">В корзину</button>
+              <button type="button" class="add-to-compare catalog-item-button">Добавить к сравнению</button>
             </div>
           </li>
           <li class="catalog-item">
             <figure class="catalog-item-image">
               <img src="#" alt="Селфи-палка «Следуй за мной»" />
               <figcaption class="catalog-item-info">
-                Селфи-палка «Следуй за мной» <span class="catalog-item-price">4900 руб.</span>
+                <a class="catalog-item-name" href="#">Селфи-палка «Следуй за мной»</a><span class="catalog-item-price">4900 руб.</span>
               </figcaption>
             </figure>
             <div class="catalog-item-buttons">
-              <a class="yellow-button catalog-item-button" href="#">В корзину</a>
-              <a class="add-to-compare catalog-item-button" href="#">Добавить к сравнению</a>
+              <button type="button" class="yellow-button catalog-item-button">В корзину</button>
+              <button type="button" class="add-to-compare catalog-item-button">Добавить к сравнению</button>
             </div>
           </li>
         </ul>
@@ -213,11 +210,12 @@
         </p>
         <button class="yellow-button" type="submit">Отправить</button>
       </form>
-      <div class="modal-close"></div>
+      <button type="button" class="modal-close"></button>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <div class="modal-close"></div>
+      <div class="moda-map-img"></div>
+      <button type="button" class="modal-close"></button>
     </section>
   </body>
 </html>
