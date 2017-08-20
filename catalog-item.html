@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Моноподы для селфи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="site-logo" href="index.html">Device</a>
+      <a class="site-logo" href="index.html"><img src="img/logo.svg" width="164" height="36" alt="Device Logo"></a>
       <nav class="user-navigation">
         <form class="header-site-search" method="post">
           <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту" />
@@ -85,7 +86,7 @@
                 <label for="bluetooth-yes">Есть</label>
               </li>
               <li>
-                </li><input class="visually-hidden filter-input filter-input-radio" id="bluetooth-no" type="radio" name="bluetooth" value="no" />
+                <input class="visually-hidden filter-input filter-input-radio" id="bluetooth-no" type="radio" name="bluetooth" value="no" />
                 <label for="bluetooth-no">Нет</label>
               </li>
             </ul>
@@ -106,7 +107,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <figure class="catalog-item-image">
-              <img src="#" alt="Любительская селфи-палка">
+              <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <figcaption class="catalog-item-info">
                 <a class="catalog-item-name" href="#">Любительская селфи-палка</a><span class="catalog-item-price">500 руб.</span>
               </figcaption>
@@ -118,7 +119,7 @@
           </li>
           <li class="catalog-item">
             <figure class="catalog-item-image">
-              <img src="#" alt="Профессиональная селфи-палка" />
+              <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка" />
               <figcaption class="catalog-item-info">
                 <a class="catalog-item-name" href="#">Профессиональная селфи-палка</a><span class="catalog-item-price">1500 руб.</span>
               </figcaption>
@@ -130,7 +131,7 @@
           </li>
           <li class="catalog-item">
             <figure class="catalog-item-image">
-              <img src="#" alt="Непотопляемая селфи-палка" />
+              <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" />
               <figcaption class="catalog-item-info">
                 <a class="catalog-item-name" href="#">Непотопляемая селфи-палка</a><span class="catalog-item-price">2500 руб.</span>
               </figcaption>
@@ -141,8 +142,9 @@
             </div>
           </li>
           <li class="catalog-item">
+            <b class="catalog-item-new">Новинка!</b>
             <figure class="catalog-item-image">
-              <img src="#" alt="Селфи-палка «Следуй за мной»" />
+              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»" />
               <figcaption class="catalog-item-info">
                 <a class="catalog-item-name" href="#">Селфи-палка «Следуй за мной»</a><span class="catalog-item-price">4900 руб.</span>
               </figcaption>
@@ -165,7 +167,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <a class="site-logo footer-logo">Device</a>
+      <a class="site-logo footer-logo"><img src="img/logo-footer.svg" width="164" height="36" alt="Device Logo"></a>
       <nav class="user-navigation-footer">
         <ul class="user-menu">
           <li class="user-icon"><a href="#">Выйти</a></li>
@@ -191,31 +193,7 @@
           <li><a class="social-button twitter" href="#"></a></li>
         </ul>
       </div>
-      <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+      <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTMLAcademy logo"></a>
     </footer>
-    <section class="modal modal-contact">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form method="post">
-        <p>
-          <label for="form-name">Ваше имя:</label>
-          <input type="text" id="form-name" name="name" placeholder="Представьтесь, пожалуйста"/>
-        </p>
-        <p>
-          <label for="form-email">Ваш e-mail:</label>
-          <input type="text" id="form-email" name="email" placeholder="Для отправки ответа"/>
-        </p>
-        <p>
-          <label for="form-text">Текст письма:</label>
-          <textarea id="form-text" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="yellow-button" type="submit">Отправить</button>
-      </form>
-      <button type="button" class="modal-close"></button>
-    </section>
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <div class="moda-map-img"></div>
-      <button type="button" class="modal-close"></button>
-    </section>
   </body>
 </html>
