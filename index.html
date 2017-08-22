@@ -45,9 +45,14 @@
       <section class="main-slider">
         <h2 class="visually-hidden">Баннеры: реклама товаров</h2>
 
-          <input id="slider-selector-1" class="visually-hidden slider-selector" type="radio" name="slider" checked><label for="slider-selector-1"></label>
-          <input id="slider-selector-2" class="visually-hidden slider-selector" type="radio" name="slider"><label for="slider-selector-2"></label>
-          <input id="slider-selector-3" class="visually-hidden slider-selector" type="radio" name="slider"><label for="slider-selector-3"></label>
+        <input id="slider-selector-1" class="visually-hidden" type="radio" name="slider" checked>
+        <input id="slider-selector-2" class="visually-hidden" type="radio" name="slider">
+        <input id="slider-selector-3" class="visually-hidden" type="radio" name="slider">
+        <ol class="slider-selector">
+          <li><label for="slider-selector-1"></label></li>
+          <li><label for="slider-selector-2"></label></li>
+          <li><label for="slider-selector-3"></label></li>
+        </ol>
 
         <div class="slider-item">
           <span class="slider-item-num">01</span>
@@ -113,41 +118,38 @@
 
       <section class="catalog-visual">
         <h2 class="visually-hidden">Наигация по каталогу</h2>
-
         <a class="catalog-visual-item catalog-visual-popular-1" href="#">
-          <span>Виртуальная реальность</span>
+          Виртуальная реальность
         </a>
-
         <a class="catalog-visual-item catalog-visual-popular-2" href="catalog-item.html">
-          <span>Моноподы для селфи</span>
+          Моноподы для селфи
         </a>
-
         <a class="catalog-visual-item catalog-visual-popular-3" href="#">
-          <span>Экшн-камеры</span>
+          Экшн-камеры
         </a>
-
         <a class="catalog-visual-item catalog-visual-popular-4" href="#">
-          <span>Фитнес-браслеты</span>
+          Фитнес-браслеты
         </a>
-
         <a class="catalog-visual-item catalog-visual-popular-5" href="#">
-          <span>Умные часы</span>
+          Умные часы
         </a>
-
         <a class="catalog-visual-item catalog-visual-popular-6" href="#">
-          <span>Квадрокоптеры</span>
+          Квадрокоптеры
         </a>
-
       </section>
 
       <section class="shop-services">
         <h2 class="visually-hidden">Услуги и сервис</h2>
 
-          <input id="services-selector-1" class="visually-hidden services-selector" type="radio" name="services" checked><label for="services-selector-1">Доставка</label>
+          <input id="services-selector-1" class="visually-hidden" type="radio" name="services" checked>
+          <input id="services-selector-2" class="visually-hidden" type="radio" name="services">
+          <input id="services-selector-3" class="visually-hidden" type="radio" name="services">
 
-          <input id="services-selector-2" class="visually-hidden services-selector" type="radio" name="services"><label for="services-selector-2">Гарантия</label>
-
-          <input id="services-selector-3" class="visually-hidden services-selector" type="radio" name="services"><label for="services-selector-3">Кредит</label>
+          <ul class="services-selector">
+            <li><label for="services-selector-1">Доставка</label></li>
+            <li><label for="services-selector-2">Гарантия</label></li>
+            <li><label for="services-selector-3">Кредит</label></li>
+          </ul>
 
         <div class="services-item">
           <h3 class="title-third">Доставка</h3>
@@ -213,31 +215,25 @@
     </main>
     <footer class="main-footer">
       <a class="site-logo footer-logo"><img src="img/logo-footer.svg" width="164" height="36" alt="Device Logo"></a>
-      <nav class="user-navigation-footer">
-        <ul class="user-menu">
-          <li class="user-icon"><a href="#">Выйти</a></li>
-          <li class="compare-icon"><a href="#">Сравнить</a></li>
-          <li class="cart-icon"><a href="#">Корзина</a></li>
-        </ul>
-      </nav>
+      <ul class="user-footer-menu">
+        <li class="user-icon"><a href="#">Выйти</a></li>
+        <li class="compare-icon"><a href="#">Сравнить</a></li>
+        <li class="cart-icon"><a href="#">Корзина</a></li>
+      </ul>
       <p class="footer-address">
         г. Москва, ул. Строителей, 15
       </p>
-      <nav class="about-footer-nav">
-        <ul class="about-menu">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+      <ul class="about-footer-menu">
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
       <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button fb" href="#"></a></li>
-          <li><a class="social-button insta" href="#"></a></li>
-          <li><a class="social-button twitter" href="#"></a></li>
-        </ul>
-      </div>
+      <ul class="footer-social">
+        <li><a class="social-button fb" href="#"></a></li>
+        <li><a class="social-button insta" href="#"></a></li>
+        <li><a class="social-button twitter" href="#"></a></li>
+      </ul>
       <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTMLAcademy logo"></a>
     </footer>
     <section class="modal modal-contact">
