@@ -20,7 +20,7 @@
         </ul>
 
         <ul class="catalog-menu">
-          <li class="catalog-menu-root">Каталог товаров
+          <li class="catalog-menu-root"><a href="#">Каталог товаров</a>
             <ul class="catalog-menu-sub">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="catalog-item.html">Моноподы для селфи</a></li>
@@ -51,6 +51,10 @@
         <form class="catalog-filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
+            <div class="price-range">
+            </div>
+            <label>От<input type="text"></label>
+            <label>До<input type="text"></label>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
@@ -96,12 +100,9 @@
       <section class="catalog">
         <div class="catalog-header">
           <h3>Сортировка:</h3>
-          <input class="visually-hidden radio-sorting" id="sort-price" type="radio" name="sorting" checked>
-          <label for="sort-price">По цене</label>
-          <input class="visually-hidden radio-sorting" id="sort-type" type="radio" name="sorting">
-          <label for="sort-type">По типу</label>
-          <input class="visually-hidden radio-sorting" id="sort-pop" type="radio" name="sorting">
-          <label for="sort-pop">По популярности</label>
+          <a class="catalog-sort catalog-sort-current" href="#">По цене</a>
+          <a class="catalog-sort" href="#">По типу</a>
+          <a class="catalog-sort" href="#">По популярности</a>
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -185,9 +186,9 @@
       </div>
       <div class="footer-links">
         <ul class="footer-social">
-          <li><a class="social-button fb" href="#"></a></li>
-          <li><a class="social-button insta" href="#"></a></li>
-          <li><a class="social-button twitter" href="#"></a></li>
+          <li><a class="social-button fb" href="#"><span class="visually-hidden">FaceBook</span></a></li>
+          <li><a class="social-button insta" href="#"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a class="social-button twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
         </ul>
         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTMLAcademy logo"></a>
       </div>

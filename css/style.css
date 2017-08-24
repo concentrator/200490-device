@@ -7,8 +7,9 @@ body {
 }
 
 .page-title,
-.title-second,
-.title-third {
+.company-info h2,
+.main-slider h3,
+.shop-services h3 {
   font-size: 47px;
   line-height: normal;
   color: #000;
