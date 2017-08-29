@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -11,7 +12,7 @@
         <a class="site-logo"><img src="img/logo.svg" width="164" height="36" alt="Device Logo"></a>
         <form class="header-site-search" method="post">
           <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту">
-          <button class="button" type="submit">Найти</button>
+          <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="user-menu user-menu-login">
           <li class="user-icon"><a href="#">Войти</a></li>
@@ -53,7 +54,7 @@
         </div>
 
         <div class="slider-item">
-          <span class="slider-item-num">01</span>
+          <span class="slide-num">01</span>
           <div class="slider-photo">
             <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
           </div>
@@ -73,7 +74,7 @@
         </div>
 
         <div class="slider-item">
-          <span class="slider-item-num">02</span>
+          <span class="slide-num">02</span>
           <div class="slider-photo">
             <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
           </div>
@@ -93,7 +94,7 @@
         </div>
 
         <div class="slider-item">
-          <span class="slider-item-num">03</span>
+          <span class="slide-num">03</span>
           <div class="slider-photo">
             <img src="img/slider-3.png" width="526" height="324" alt="Квадрокоптер с мощным лазером">
           </div>
@@ -116,22 +117,22 @@
 
       <section class="catalog-visual">
         <h2 class="visually-hidden">Наигация по каталогу</h2>
-        <a class="catalog-visual-item catalog-visual-popular-1" href="#">
+        <a class="popular-1" href="#">
           Виртуальная реальность
         </a>
-        <a class="catalog-visual-item catalog-visual-popular-2" href="catalog-item.html">
+        <a class="popular-2" href="catalog-item.html">
           Моноподы для селфи
         </a>
-        <a class="catalog-visual-item catalog-visual-popular-3" href="#">
+        <a class="popular-3" href="#">
           Экшн-камеры
         </a>
-        <a class="catalog-visual-item catalog-visual-popular-4" href="#">
+        <a class="popular-4" href="#">
           Фитнес-браслеты
         </a>
-        <a class="catalog-visual-item catalog-visual-popular-5" href="#">
+        <a class="popular-5" href="#">
           Умные часы
         </a>
-        <a class="catalog-visual-item catalog-visual-popular-6" href="#">
+        <a class="popular-6" href="#">
           Квадрокоптеры
         </a>
       </section>
@@ -139,14 +140,10 @@
       <section class="shop-services">
         <h2 class="visually-hidden">Услуги и сервис</h2>
 
-          <input id="services-selector-1" class="visually-hidden" type="radio" name="services" checked>
-          <input id="services-selector-2" class="visually-hidden" type="radio" name="services">
-          <input id="services-selector-3" class="visually-hidden" type="radio" name="services">
-
           <div class="services-selector">
-            <label for="services-selector-1">Доставка</label>
-            <label for="services-selector-2">Гарантия</label>
-            <label for="services-selector-3">Кредит</label>
+            <button class="yellow-button">Доставка</button>
+            <button class="yellow-button">Гарантия</button>
+            <button class="yellow-button">Кредит</button>
           </div>
 
         <div class="services-item">
@@ -242,14 +239,14 @@
     </footer>
     <section class="modal modal-contact">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form method="post">
+      <form method="post" action="https://echo.htmlacademy.ru">
         <p>
           <label for="form-name">Ваше имя:</label>
           <input type="text" id="form-name" name="name" placeholder="Представьтесь, пожалуйста">
         </p>
         <p>
           <label for="form-email">Ваш e-mail:</label>
-          <input type="text" id="form-email" name="email" placeholder="Для отправки ответа">
+          <input type="email" id="form-email" name="email" placeholder="Для отправки ответа">
         </p>
         <p>
           <label for="form-text">Текст письма:</label>
