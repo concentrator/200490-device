@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .site-logo:hover,
 .footer-logo:hover,
 .academy-logo:hover {
@@ -71,7 +75,7 @@ a {
   font-weight: 900;
   color: #000;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.2em;
 }
 
 button.yellow-button {
@@ -221,14 +225,18 @@ button.yellow-button {
 /* Visual Ctalog Nav */
 
 .catalog-visual a {
-  display: block;
+  flex-shrink: 0;
+  flex-grow: 0;
   position: relative;
   width: 160px;
+  margin-bottom: 10px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
+  line-height: 22px;
   font-weight: 900;
   color: #000;
   background-color: #fff;
+
 }
 
 .catalog-visual a::before {
@@ -236,6 +244,7 @@ button.yellow-button {
   display: block;
   width: 160px;
   height: 160px;
+  margin-bottom: 33px;
   background-color: #f7e296;
   background-position: center center;
   background-repeat: no-repeat;
@@ -442,16 +451,16 @@ button.yellow-button {
   opacity: 0.1;
 }
 
-/*.filters {
+.filters {
   background-color: #eee;
-}*/
+}
 
 .filters h3,
 .catalog h3 {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 900;
-  letter-spacing: 4px;
+  letter-spacing: 0.23em;
   color: #000;
   text-transform: uppercase;
 }
@@ -609,4 +618,408 @@ button.yellow-button {
 
 .pagination-num a:active {
   color: rgba(0,0,0,1);
+}
+
+
+/* Сетка */
+
+body{
+  min-width: 1200px;
+  min-height: 2795px;
+
+}
+
+body {
+  background-image: url("../device-index.jpg");
+  background-repeat: no-repeat;
+  background-size: 1440px auto;
+
+}
+
+
+body.inner-page {
+  min-width: 1200px;
+  min-height: 2015px;
+
+}
+
+body.inner-page {
+  background-image: url("../device-catalog.jpg");
+  background-repeat: no-repeat;
+  background-size: 1440px auto;
+
+}
+
+.container {
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+  outline: 1px solid blue;
+}
+
+.main-header {
+  margin-top: 40px;
+  padding: 35px 60px;
+  outline: 1px solid violet;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+
+
+  outline: 1px solid green;
+  min-height: 116px;
+}
+
+.header-index-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  outline: 1px solid red;
+}
+
+.site-logo {
+  position: absolute;
+  top: 21px;
+  width: 164px;
+  height: 36px;
+
+  outline: 1px solid red;
+}
+
+.header-site-search {
+  width: 440px;
+  height: 49px;
+
+
+  outline: 1px solid green;
+}
+
+.catalog-menu,
+.about-menu {
+  padding: 0;
+  margin: 0;
+  height: 49px;
+
+  outline: 1px solid pink;
+}
+
+.user-menu {
+  padding: 0;
+  margin: 0;
+  width: 500px;
+  height: 49px;
+
+  outline: 1px solid orange;
+}
+.catalog-menu {
+  width: 260px;
+}
+.about-menu {
+    width: 500px;
+}
+
+.main-slider {
+  min-height: 500px;
+  margin-bottom: 95px;
+  outline: 1px solid black;
+}
+
+.catalog-visual {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 95px;
+
+  opacity: 0.1;
+  outline: 1px solid cyan;
+}
+
+.shop-services {
+  min-height: 288px;
+  margin-top: 174px;
+  margin-bottom: 95px;
+  outline: 1px solid grey;
+}
+
+.brands {
+  min-height: 100px;
+  margin-bottom: 92px;
+  outline: 1px solid gold;
+}
+
+.brands-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brands-list li {
+  width: 260px;
+  height: 100px;
+}
+
+.brands-list li img {
+  display: block;
+}
+
+.company-info-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.company-info {
+  width: 560px;
+  min-height: 580px;
+  outline: 1px solid red;
+}
+
+.main-footer {
+  /*min-height: 203px;*/
+  padding: 64px 0;
+  outline: 1px solid orange;
+  background: transparent;
+}
+
+.main-footer  .container {
+  display: flex;
+  /*min-height: 200px;*/
+  flex-direction: column;
+  outline: 1px solid yellow;
+}
+
+.footer-user {
+  display: flex;
+  justify-content: space-between;
+  min-height: 36px;
+  margin-bottom: 30px;
+  outline: 1px solid green;
+}
+
+.footer-about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /*min-height: 41px;*/
+  margin-bottom: 60px;
+  outline: 1px solid green;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+  width: 100%;
+  margin-bottom: 0;
+  outline: 1px solid green;
+}
+
+.footer-links::before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  margin-right: auto;
+  background-color: #ffc600;
+}
+
+.footer-logo {
+  /*align-self: flex-end;*/
+}
+
+.user-footer-menu {
+  padding: 0;
+  margin: 0;
+  min-height: 36px;
+  width: 360px;
+  outline: 1px solid pink;
+}
+
+.footer-address {
+  padding: 0;
+  margin: 0;
+  width: 260px;
+  /*height: 30px;*/
+
+  outline: 1px solid lightgreen;
+}
+
+.about-footer-menu {
+  padding: 0;
+  margin: 0 auto;
+
+  width: 440px;
+  /*height: 30px;*/
+  outline: 1px solid lightgreen;
+}
+
+.footer-phone {
+  margin-left: auto;
+  outline: 1px solid lightgreen;
+}
+
+.footer-social {
+  padding: 0;
+  margin: 0 auto;
+  min-height: 34px;
+  width: 240px;
+  outline: 1px solid lightgreen;
+}
+
+.academy-logo {
+  width: 80px;
+  height: 34px;
+  text-align: right;
+  margin-left: auto;
+  outline: 1px solid lightgreen;
+}
+
+.container-inner-page {
+  width: 1100px;
+  padding: 0 20px 0 80px;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin-top: 35px;
+  margin-bottom: 17px;
+  letter-spacing: 0.01em;
+  line-height: 52px;
+}
+
+.breadcrumbs {
+  min-height: 36px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 39px;
+  outline: 1px solid lightgreen;
+}
+
+.index-wrapper {
+  width: 100%;
+  min-height: 1283px;
+  background-image:
+  linear-gradient(to bottom, rgba(0,0,0,0.08) 70px, transparent 70px),
+  linear-gradient(to right, #eeeeee 50%, #fff 50%);
+  opacity: 0.5;
+}
+
+ .index-wrapper .container-inner-page {
+   display: flex;
+ }
+
+.filters {
+  background: transparent;
+  width: 200px;
+  padding-right: 68px;
+  outline: 1px solid red;
+}
+
+.catalog-filter-header,
+.catalog-header h3 {
+  height: 70px;
+  line-height: 70px;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter-header {
+  margin-bottom: 69px;
+}
+
+.catalog-filter {
+
+  outline: 1px solid yellow;
+}
+
+.catalog-filter fieldset {
+  padding: 0;
+  margin: 0;
+
+  border-top: 2px solid black;
+  margin-bottom: 25px;
+}
+
+.catalog-price {
+  min-height: 113px;
+}
+
+.catalog-color {
+  min-height: 258px;
+}
+
+.catalog-bluetooth {
+  min-height: 143px;
+  outline: 1px solid cyan;
+}
+
+.catalog-filter .yellow-button {
+  width: 100%;
+}
+.catalog {
+  width: 832px;
+  min-height: 1283px;
+  background-color: #fff;
+
+  outline: 1px solid yellow;
+
+}
+
+.catalog-header {
+  height: 70px;
+  padding-left: 72px;
+
+}
+
+.catalog-header h3 {
+  display: inline-block;
+  width: 200px;
+  outline: 1px solid lightgreen;
+}
+
+.catalog-header a.catalog-sort {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: 28px;
+  color: red;
+  outline: 1px solid orange;
+}
+
+.catalog-sort-arrows {
+  display: inline-block;
+}
+
+.catalog-list {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  padding-left: 72px;
+  padding-top: 54px;
+  outline: 1px solid orange;
+}
+
+.catalog-item {
+  width: 360px;
+  min-height: 460px;
+  margin-top: 15px;
+  margin-bottom: 33px;
+  outline: 1px solid green;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+  margin-left: 72px;
+  min-height: 70px;
+
+  outline: 1px solid red;
 }
