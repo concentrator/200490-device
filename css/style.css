@@ -667,8 +667,6 @@ body.inner-page {
   display: flex;
   justify-content: space-between;
   background: transparent;
-
-
   outline: 1px solid green;
   min-height: 116px;
 }
@@ -686,15 +684,12 @@ body.inner-page {
   top: 21px;
   width: 164px;
   height: 36px;
-
   outline: 1px solid red;
 }
 
 .header-site-search {
   width: 440px;
   height: 49px;
-
-
   outline: 1px solid green;
 }
 
@@ -703,7 +698,6 @@ body.inner-page {
   padding: 0;
   margin: 0;
   height: 49px;
-
   outline: 1px solid pink;
 }
 
@@ -733,7 +727,6 @@ body.inner-page {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 95px;
-
   opacity: 0.1;
   outline: 1px solid cyan;
 }
@@ -781,7 +774,6 @@ body.inner-page {
 }
 
 .main-footer {
-  /*min-height: 203px;*/
   padding: 64px 0;
   outline: 1px solid orange;
   background: transparent;
@@ -789,7 +781,6 @@ body.inner-page {
 
 .main-footer  .container {
   display: flex;
-  /*min-height: 200px;*/
   flex-direction: column;
   outline: 1px solid yellow;
 }
@@ -806,7 +797,6 @@ body.inner-page {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /*min-height: 41px;*/
   margin-bottom: 60px;
   outline: 1px solid green;
 }
@@ -830,7 +820,6 @@ body.inner-page {
 }
 
 .footer-logo {
-  /*align-self: flex-end;*/
 }
 
 .user-footer-menu {
@@ -845,17 +834,13 @@ body.inner-page {
   padding: 0;
   margin: 0;
   width: 260px;
-  /*height: 30px;*/
-
   outline: 1px solid lightgreen;
 }
 
 .about-footer-menu {
   padding: 0;
   margin: 0 auto;
-
   width: 440px;
-  /*height: 30px;*/
   outline: 1px solid lightgreen;
 }
 
@@ -934,14 +919,12 @@ body.inner-page {
 }
 
 .catalog-filter {
-
   outline: 1px solid yellow;
 }
 
 .catalog-filter fieldset {
   padding: 0;
   margin: 0;
-
   border-top: 2px solid black;
   margin-bottom: 25px;
 }
@@ -962,19 +945,17 @@ body.inner-page {
 .catalog-filter .yellow-button {
   width: 100%;
 }
+
 .catalog {
   width: 832px;
   min-height: 1283px;
   background-color: #fff;
-
   outline: 1px solid yellow;
-
 }
 
 .catalog-header {
   height: 70px;
   padding-left: 72px;
-
 }
 
 .catalog-header h3 {
@@ -1020,6 +1001,5 @@ body.inner-page {
   margin: 0;
   margin-left: 72px;
   min-height: 70px;
-
   outline: 1px solid red;
 }
