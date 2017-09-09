@@ -222,9 +222,9 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
         <div class="contacts-map">
-          <img src="img/map.jpg" width="560" height="222" alt="Схема проезда">
+          <a class="contacts-map-link" href="#"><img src="img/map.jpg" width="560" height="222" alt="Схема проезда"></a>
         </div>
-        <button type="button" class="yellow-button">Напишите нам</button>
+        <button type="button" class="yellow-button contact-link">Напишите нам</button>
       </section>
     </div>
 
@@ -258,30 +258,82 @@
       </div>
     </footer>
 
-    <section class="modal modal-contact">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form method="post" action="https://echo.htmlacademy.ru">
-        <p>
-          <label for="form-name">Ваше имя:</label>
-          <input type="text" id="form-name" name="name" placeholder="Представьтесь, пожалуйста">
-        </p>
-        <p>
-          <label for="form-email">Ваш e-mail:</label>
-          <input type="email" id="form-email" name="email" placeholder="Для отправки ответа">
-        </p>
-        <p>
-          <label for="form-text">Текст письма:</label>
-          <textarea id="form-text" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="yellow-button" type="submit">Отправить</button>
-      </form>
-      <button type="button" class="modal-close">Закрыть</button>
-    </section>
+    <div class="modal modal-contact">
+      <section class="modal-contact-form">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form method="post" action="https://echo.htmlacademy.ru">
+          <p>
+            <label for="form-name">Ваше имя:</label>
+            <input type="text" id="form-name" name="name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p>
+            <label for="form-email">Ваш e-mail:</label>
+            <input type="email" id="form-email" name="email" placeholder="Для отправки ответа">
+          </p>
+          <p>
+            <label for="form-text">Текст письма:</label>
+            <textarea id="form-text" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="yellow-button" type="submit">Отправить</button>
+        </form>
+        <button type="button" class="modal-close">Закрыть</button>
+      </section>
+    </div>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <div class="moda-map-img"><img src="img/map-big.jpg" width="960" height="559" alt="Карта проезда"></div>
+      <div class="modal-map-img"><img src="img/map-big.jpg" width="960" height="559" alt="Карта проезда"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488780044!2d37.527429315858306!3d55.68703098053578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1504978925176" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
       <button type="button" class="modal-close">Закрыть</button>
     </section>
 
+
+    <script>
+      var link = document.querySelector(".contact-link");
+      var popup = document.querySelector(".modal-contact");
+      var close = popup.querySelector(".modal-close");
+      var form = popup.querySelector("form");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+          }
+        }
+      });
+
+      var mapLink = document.querySelector(".contacts-map-link");
+
+      var mapPopup = document.querySelector(".modal-map");
+      var mapClose = mapPopup.querySelector(".modal-close");
+
+      mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+      });
+
+      mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-show")) {
+            mapPopup.classList.remove("modal-show");
+          }
+        }
+      });
+    </script>
   </body>
 </html>

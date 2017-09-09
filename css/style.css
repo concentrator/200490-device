@@ -1139,21 +1139,64 @@ button.yellow-button {
 /* Modal */
 
 .modal {
-  display: none;
   position: fixed;
-  background: #fff;
+  width: 960px;
+  top: 100px;
+  left: 50%;
+  margin-left: -480px;
   z-index: 10;
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-map {
+  height: 559px;
+  top: 50%;
+  margin-top: -280px;
+}
+
+.modal-map-img {
+  box-shadow: 0 10px 20px 0 rgba(4,6,6,0.2);
+}
+
+.modal-map-img img {
+  display: block;
+}
+
+.modal-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .modal-contact {
-  top: 120px;
-  left: 50%;
-  margin-left: -480px;
+  height: 553px;
+}
+
+.modal-contact-form {
+  position: absolute;
   width: 960px;
   height: 553px;
   padding: 80px 100px;
   box-sizing: border-box;
   display: block;
+  background: #fff;
+  box-shadow: 0 10px 20px 0 rgba(4,6,6,0.2);
+}
+
+.modal-contact-form::before {
+  content: "";
+  position: absolute;
+  top: 43px;
+  left: 0;
+  width: 100%;
+  height: 430px;
+  z-index: -1;
+  box-shadow: 0 20px 40px 0 rgba(4,6,6,0.75);
 }
 
 .modal-contact form {
@@ -1251,6 +1294,7 @@ button.yellow-button {
   border-radius: 50%;
   opacity: 0.5;
   cursor: pointer;
+  z-index: 2;
 }
 
 .modal .modal-close::before,
