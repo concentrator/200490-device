@@ -64,9 +64,14 @@
               <fieldset class="catalog-price">
                 <legend>Стоимость</legend>
                 <div class="price-range">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
                 </div>
-                <label>От<input type="text"></label>
-                <label>До<input type="text"></label>
+                <label>От<input type="text" value="0" name="price-from"></label>
+                <label>До<input type="text" value="5000" name="price-to"></label>
               </fieldset>
               <fieldset class="catalog-color">
                 <legend>Цвет</legend>
