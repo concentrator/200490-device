@@ -12,7 +12,7 @@
         <a class="site-logo"><img src="img/logo.svg" width="164" height="36" alt="Device Logo"></a>
         <nav class="main-navigation">
           <div class="header-index-col">
-            <form class="header-site-search" method="post">
+            <form class="header-site-search" method="post" action="https://echo.htmlacademy.ru">
               <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту">
               <button class="search-button" type="submit">Найти</button>
             </form>
@@ -63,7 +63,7 @@
         <div class="slider-wrapper">
           <div id="slide-1" class="slider-item">
             <div class="slider-photo slider-index-col">
-              <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+              <img src="img/slider1.png" width="560" height="500" alt="Самая длинная палка для селфи">
             </div>
             <div class="slider-info slider-index-col">
               <span class="slide-num">01</span>
@@ -83,7 +83,7 @@
 
           <div id="slide-2" class="slider-item">
             <div class="slider-photo slider-index-col">
-              <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
+              <img src="img/slider2.png" width="560" height="500" alt="Мотивирующие фитнес-браслеты">
             </div>
             <div class="slider-info slider-index-col">
               <span class="slide-num">02</span>
@@ -103,7 +103,7 @@
 
           <div id="slide-3" class="slider-item">
             <div class="slider-photo slider-index-col">
-              <img src="img/slider-3.png" width="526" height="324" alt="Квадрокоптер с мощным лазером">
+              <img src="img/slider3.png" width="560" height="500" alt="Квадрокоптер с мощным лазером">
             </div>
             <div class="slider-info slider-index-col">
               <span class="slide-num">03</span>
@@ -126,11 +126,12 @@
 
       </section>
       <section class="catalog-visual">
+        <h2 class="visually-hidden">Наигация по каталогу</h2>
         <a class="popular-1" href="#">
           Виртуальная реальность
         </a>
         <a class="popular-2" href="catalog-item.html">
-          Моноподы для селфи
+          Моноподы для&nbsp;селфи
         </a>
         <a class="popular-3" href="#">
           Экшн-камеры
@@ -191,6 +192,7 @@
 
     <div class="container">
       <section class="brands">
+        <h2 class="visually-hidden">Производители</h2>
         <ul class="brands-list">
           <li><img src="img/logo-1.png" width="260" height="100" alt="DJI"></li>
           <li><img src="img/logo-2.png" width="260" height="100" alt="SP Gadgets"></li>
@@ -204,7 +206,7 @@
       <section class="company-info">
         <h2>О нас</h2>
         <p>
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+          Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.
         </p>
         <p>
           Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
@@ -287,53 +289,10 @@
     </section>
 
 
-    <script>
-      var link = document.querySelector(".contact-link");
-      var popup = document.querySelector(".modal-contact");
-      var close = popup.querySelector(".modal-close");
-      var form = popup.querySelector("form");
+    <script src="js/modal.js"></script>
 
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-
-      });
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-      });
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (popup.classList.contains("modal-show")) {
-            popup.classList.remove("modal-show");
-          }
-        }
-      });
-
-      var mapLink = document.querySelector(".contacts-map-link");
-
-      var mapPopup = document.querySelector(".modal-map");
-      var mapClose = mapPopup.querySelector(".modal-close");
-
-      mapLink.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mapPopup.classList.add("modal-show");
-      });
-
-      mapClose.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mapPopup.classList.remove("modal-show");
-      });
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (mapPopup.classList.contains("modal-show")) {
-            mapPopup.classList.remove("modal-show");
-          }
-        }
-      });
-    </script>
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type='text/javascript' src="js/grayscale.js"></script>
+    <script type='text/javascript' src="js/functions.js"></script>
   </body>
 </html>
