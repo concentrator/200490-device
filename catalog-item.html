@@ -13,8 +13,8 @@
         <nav class="main-navigation">
           <div class="header-index-col">
             <form class="header-site-search" method="post" action="https://echo.htmlacademy.ru">
-              <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту">
-              <button class="search-button" type="submit">Найти</button>
+              <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту"><!--
+              --><button class="search-button" type="submit">Найти</button>
             </form>
             <ul class="catalog-menu">
               <li class="catalog-menu-root">
@@ -22,18 +22,21 @@
                 <span class="catalog-expand"></span>
                 <ul class="catalog-menu-sub">
                   <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="catalog-item.html">Моноподы для селфи</a></li>
-                  <li><a href="#">Экшн-камеры</a></li>
                   <li><a href="#">Фитнес-браслеты</a></li>
-                  <li><a href="#">Умные часы</a></li>
                   <li><a href="#">Квадрокоптеры</a></li>
+                  <li><a href="catalog-item.html">Моноподы для селфи</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="header-index-col">
-            <ul class="user-menu user-menu-auth">
-              <li class="user-icon"><a href="#">Валентин Петухов</a><a class="logout-link" href="#">Выйти</a></li>
+            <ul class="user-menu login-menu-auth">
+              <li><a class="user-icon profile-link" href="#">Валентин Петухов</a></li>
+              <li><a class="logout-link" href="#">Выйти</a></li>
+            </ul>
+            <ul class="user-menu shop-menu">
               <li class="compare-icon"><a href="#">Сравнить</a></li>
               <li class="cart-icon"><a href="#">Корзина</a></li>
             </ul>
@@ -67,8 +70,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
+                  <div class="range-toggle range-toggle-min" tabindex="0"></div>
+                  <div class="range-toggle range-toggle-max" tabindex="0"></div>
                 </div>
                 <label>От<input type="text" value="0" name="price-from"></label>
                 <label>До<input type="text" value="5000" name="price-to"></label>
@@ -116,16 +119,21 @@
           </section>
 
           <section class="catalog">
+
             <div class="catalog-header">
               <h3>Сортировка:</h3>
-              <a class="catalog-sort current" href="#">По цене</a>
-              <a class="catalog-sort" href="#">По типу</a>
-              <a class="catalog-sort" href="#">По популярности</a>
+              <div class="catalog-sort-links">
+                <a class="catalog-sort current" href="#">По цене</a>
+                <a class="catalog-sort" href="#">По типу</a>
+                <a class="catalog-sort" href="#">По популярности</a>
+              </div>
               <div class="catalog-sort-arrows">
                 <a class="catalog-sort-up" href="#"></a>
                 <a class="catalog-sort-down current" href="#"></a>
               </div>
             </div>
+
+
             <ul class="catalog-list">
               <li class="catalog-item">
                 <div class="catalog-item-image">
@@ -152,7 +160,7 @@
                   </div>
                 </div>
                 <p class="catalog-item-info">
-                  <a class="catalog-item-name" href="#">Профессиональная селфи-палка</a><span class="catalog-item-price">1 500 руб.</span>
+                  <a class="catalog-item-name" href="#">Профессиональная селфи&#8209;палка</a><span class="catalog-item-price">1 500 руб.</span>
                 </p>
               </li>
               <li class="catalog-item">
@@ -170,7 +178,8 @@
                 </p>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-image new-item">
+                <div class="catalog-item-image">
+                  <span class="new-item">NEW</span>
                   <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 </div>
                 <div class="catalog-item-overlay">
@@ -201,9 +210,9 @@
         <div class="footer-user">
           <img class="footer-logo" src="img/logo-footer.svg" width="164" height="36" alt="Device Logo">
           <ul class="user-footer-menu">
-            <li class="user-icon"><a href="#">Выйти</a></li>
-            <li class="compare-icon"><a href="#">Сравнить</a></li>
-            <li class="cart-icon"><a href="#">Корзина</a></li>
+            <li><a class="user-icon" href="#">Войти</a></li>
+            <li><a class="compare-icon" href="#">Сравнить</a></li>
+            <li><a class="cart-icon" href="#">Корзина</a></li>
           </ul>
         </div>
         <div class="footer-about">
