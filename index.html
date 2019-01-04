@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <title>Девайс</title>
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <header class="main-header">
         <a class="site-logo"><img src="img/logo.svg" width="164" height="36" alt="Device Logo"></a>
         <nav class="main-navigation">
-          <div class="header-index-col">
+          <div class="header-index-col">          
             <form class="header-site-search" method="post" action="https://echo.htmlacademy.ru">
-              <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту"><!--
-              --><button class="search-button" type="submit">Найти</button>
+              <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту" autocomplete="off">
+              <button class="search-button" type="submit">Найти</button>
             </form>
             <ul class="catalog-menu">
               <li class="catalog-menu-root">
@@ -74,12 +74,14 @@
                 <p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a class="yellow-button" href="#">Подробнее</a>
                 <table>
-                  <tr>
-                    <td>8,5 м</td><td>5 кг</td><td>Карбон</td>
-                  </tr>
-                  <tr>
-                    <th>Длина палки</th><th>Вес палки</th><th>Материал</th>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>Длина палки</th><th>Вес палки</th><th>Материал</th>
+                    </tr>
+                    <tr>
+                      <td>8,5 м</td><td>5 кг</td><td>Карбон</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -128,7 +130,7 @@
         </section>
 
         <section class="catalog-visual">
-          <h2 class="visually-hidden">Наигация по каталогу</h2>
+          <h2 class="visually-hidden">Навигация по каталогу</h2>
           <a class="popular-1" href="#">
             Виртуальная реальность
           </a>
@@ -226,8 +228,10 @@
       <div class="container">
         <div class="footer-user">
           <img class="footer-logo" src="img/logo-footer.svg" width="164" height="36" alt="Device Logo">
-          <ul class="user-footer-menu">
+          <ul class="user-footer-menu login-footer-menu-auth">
             <li><a class="user-icon" href="#">Войти</a></li>
+          </ul>
+          <ul class="user-footer-menu shop-footer-menu">
             <li><a class="compare-icon" href="#">Сравнить</a></li>
             <li><a class="cart-icon" href="#">Корзина</a></li>
           </ul>
@@ -258,7 +262,7 @@
         <form method="post" action="https://echo.htmlacademy.ru">
           <p>
             <label for="form-name">Ваше имя:</label>
-            <input type="text" id="form-name" name="login" placeholder="Представьтесь, пожалуйста">
+            <input type="text" id="form-name" name="login" value="" placeholder="Представьтесь, пожалуйста" autocomplete="off">
           </p>
           <p>
             <label for="form-email">Ваш e-mail:</label>
@@ -280,10 +284,9 @@
       <button type="button" class="modal-close">Закрыть</button>
     </section>
 
-
-    <script type='text/javascript' src="js/modal.min.js"></script>
-    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type='text/javascript' src="js/grayscale.js"></script>
-    <script type='text/javascript' src="js/functions.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/grayscale.js"></script>
+    <script src="js/functions.min.js"></script>
   </body>
 </html>

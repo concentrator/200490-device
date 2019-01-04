@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Моноподы для селфи</title>
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
     <div class="container">
@@ -13,8 +13,8 @@
         <nav class="main-navigation">
           <div class="header-index-col">
             <form class="header-site-search" method="post" action="https://echo.htmlacademy.ru">
-              <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту"><!--
-              --><button class="search-button" type="submit">Найти</button>
+              <input class="search-icon" type="text" name="search" placeholder="Поиск по сайту">
+              <button class="search-button" type="submit">Найти</button>
             </form>
             <ul class="catalog-menu">
               <li class="catalog-menu-root">
@@ -144,7 +144,6 @@
                   <button type="button" class="compare-button">Добавить к сравнению</button>
                   <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 </div>
-
               </li>
 
               <li class="catalog-item">
@@ -167,7 +166,6 @@
                   <button type="button" class="compare-button">Добавить к сравнению</button>
                   <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 </div>
-
               </li>
               <li class="catalog-item">
                 <h3 class="catalog-item-title">
@@ -182,11 +180,11 @@
               </li>
             </ul>
             <ul class="pagination-list">
-              <li class="pagination-item pagination-back"><a href="#">Назад</a></li>
+              <li class="pagination-item pagination-btn pagination-prev"><a href="#">Назад</a></li>
               <li class="pagination-item pagination-num pagination-current"><a>1</a></li>
               <li class="pagination-item pagination-num"><a href="#">2</a></li>
               <li class="pagination-item pagination-num"><a href="#">3</a></li>
-              <li class="pagination-item pagination-front"><a href="#">Вперед</a></li>
+              <li class="pagination-item pagination-btn pagination-next"><a href="#">Вперед</a></li>
             </ul>
           </section>
         </div>
@@ -197,8 +195,11 @@
       <div class="container">
         <div class="footer-user">
           <img class="footer-logo" src="img/logo-footer.svg" width="164" height="36" alt="Device Logo">
-          <ul class="user-footer-menu">
-            <li><a class="user-icon" href="#">Войти</a></li>
+          <ul class="user-footer-menu login-footer-menu-auth">
+            <li><a class="user-icon profile-link" href="#">Валентин Петухов</a></li>
+            <li><a class="logout-link" href="#">Выйти</a></li>
+          </ul>
+          <ul class="user-footer-menu shop-footer-menu">
             <li><a class="compare-icon" href="#">Сравнить</a></li>
             <li><a class="cart-icon" href="#">Корзина</a></li>
           </ul>
